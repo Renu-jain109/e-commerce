@@ -1,1 +1,43 @@
 /* You can add global styles to this file, and also import other style files */
+body {
+    font-family: sans-serif;
+}
+
+.container {
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.common-form {
+    display: flex;
+    text-align: center;
+    margin: auto;
+    flex-direction: column;
+    width: 300px;
+}
+
+.form-input {
+    height: 35px;
+    margin-bottom: 20px;
+    padding-left: 10px;
+    border: 1px solid blueviolet;
+    color: blueviolet !important;
+    border-radius: 5px;
+    outline: none;
+}
+
+/* Add these rules to style the placeholder text */
+.form-input::placeholder {
+    color: blueviolet;
+    opacity: 1; /* Ensures the color is not faded in some browsers */
+}
+
+.form-button {
+    height: 35px;
+    border: 1px solid blueviolet;
+    border-radius: 5px;
+    cursor: pointer;
+    color: blueviolet;
+    font-size: 16px;
+
+}
