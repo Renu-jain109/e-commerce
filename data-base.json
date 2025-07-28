@@ -11,6 +11,24 @@
       "name": "Neha",
       "email": "neha@gmail.com",
       "password": "qwe@123"
+    },
+    {
+      "id": "a439",
+      "name": "Geeta",
+      "password": "qwe@123",
+      "email": "geeta@gmail.com"
+    },
+    {
+      "id": "083b",
+      "name": "Pooja",
+      "password": "qwe@123",
+      "email": "pooja.@gmail.com"
+    },
+    {
+      "id": "a0c3",
+      "name": "Priya",
+      "password": "qwe@123",
+      "email": "priya@gmail.com"
     }
   ]
 }
