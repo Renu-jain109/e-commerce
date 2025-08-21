@@ -5,6 +5,12 @@
       "name": "diya",
       "password": "qwe@123",
       "email": "diya@gmail.com"
+    },
+    {
+      "id": "d585",
+      "name": "rohit",
+      "password": "qwe@123",
+      "email": "rohit@gmail.com"
     }
   ],
   "products": [

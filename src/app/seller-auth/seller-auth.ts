@@ -14,7 +14,7 @@ import { CommonModule } from '@angular/common';
 export class SellerAuth implements OnInit {
 
   showLogin = false;
-  authError:string = '';
+  authError: string = '';
   constructor(private sellerService: Seller, private router: Router) { }
   // router = inject(Router);
 
@@ -23,15 +23,16 @@ export class SellerAuth implements OnInit {
   }
 
   signUp(data: signUp): void {
-    console.warn(data);
-    this.sellerService.userSignUp(data).subscribe((result: any) => {
-      console.log(result);
-      if(result){
-        // localStorage.setItem('seller',JSON.stringify(result.body))
+    this.sellerService.signUp(data).subscribe((result: any) => {
+      if (result) {
+        localStorage.setItem('seller', JSON.stringify(result))
         this.router.navigate(['/seller-home'])
+
+      } else {
+        this.authError = 'Signup failed. Please try again.';
       }
-      
     });
+
   }
 
   // signUp(data: signUp): void {
@@ -45,23 +46,23 @@ export class SellerAuth implements OnInit {
   //   })
   // }
 
-  openLogin(){
-this.showLogin = true;
+  openLogin() {
+    this.showLogin = true;
   }
 
-  openSignUp(){
+  openSignUp() {
     this.showLogin = false;
   }
 
   login(data: login): void {
     // this.authError = '';
-    this.sellerService.userLogin(data);
+    this.sellerService.login(data);
     this.sellerService.isLoginError.subscribe((error) => {
-      if(error){
+      if (error) {
         this.authError = 'Email or Password is not correct';
       }
     })
-    
+
   }
 
 }

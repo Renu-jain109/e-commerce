@@ -1,6 +1,6 @@
 import { CommonModule } from '@angular/common';
 import { Component, OnInit } from '@angular/core';
-import { Router, RouterLink } from '@angular/router';
+import { NavigationEnd, Router, RouterLink } from '@angular/router';
 import { Product } from '../services/product';
 import { product } from '../data-type';
 @Component({
@@ -20,10 +20,10 @@ export class Header implements OnInit {
 
   ngOnInit(): void {
     this.route.events.subscribe((val: any) => {
-      if (val.url) {
+      if (val instanceof NavigationEnd) {
         if (localStorage.getItem('seller') && val.url.includes('seller')) {
-          let sellerStore = localStorage.getItem('seller');
-          let sellerData = sellerStore && JSON.parse(sellerStore)[0];
+          let sellerStore = localStorage.getItem('seller');          
+          let sellerData = sellerStore && JSON.parse(sellerStore);          
           this.sellerName = sellerData.name;
           this.menuType = 'seller';
 

@@ -38,7 +38,7 @@ export class Seller {
   //   )
   // } 
 
-  userSignUp(data: signUp) {
+  signUp(data: signUp) {
     console.log('serviceData', data);
     return this.http.post("http://localhost:3000/seller", data);
   }
@@ -50,7 +50,7 @@ export class Seller {
     }
   }
 
-  userLogin(data: login): void {
+  login(data: login): void {
     this.http.get(`http://localhost:3000/seller?email=${data.email}&password=${data.password}`, { observe: 'response' })
       .subscribe((result: any) => {
         console.log(result);
