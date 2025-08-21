@@ -1,34 +1,143 @@
 {
   "seller": [
     {
-      "id": "487c",
-      "name": "Diya",
-      "email": "diya@gmail.com",
-      "password": "qwe@123"
-    },
-    {
-      "id": "9278",
-      "name": "Neha",
-      "email": "neha@gmail.com",
-      "password": "qwe@123"
-    },
-    {
-      "id": "a439",
-      "name": "Geeta",
+      "id": "583c",
+      "name": "diya",
       "password": "qwe@123",
-      "email": "geeta@gmail.com"
+      "email": "diya@gmail.com"
+    }
+  ],
+  "products": [
+    {
+      "name": "IPhone",
+      "price": "100000",
+      "color": "Grey",
+      "category": "Mobile",
+      "description": "cxnvbm",
+      "image": "/assets/2-2 (1).webp",
+      "id": "839e"
     },
     {
-      "id": "083b",
+      "name": "Dell Laptop",
+      "price": "3,21,790.02",
+      "color": "Black",
+      "category": "Laptop",
+      "description": "Alienware 18 Area-51 Gaming Laptop",
+      "image": "/assets/laptop-alienware-ac16250-gallery-1 (1).avif",
+      "id": "d1b0"
+    },
+    {
+      "id": "21fa",
+      "name": "HP Laptop",
+      "price": "50000",
+      "color": "Rose Gold",
+      "category": "Laptop",
+      "description": "HP 15.6-inch Ryzen 5 Laptop with 8GB RAM, 256GB SSD, Rose Gold",
+      "image": "/assets/64c24ac1deecdc59323a1773-hp-15-6-ryzen-5-8gb-256gb-laptop-rose (1).jpg"
+    },
+    {
+      "id": "f0d4",
+      "name": "iPhone 15",
+      "price": "64,900",
+      "color": "Pink",
+      "category": "Mobile",
+      "description": "\niPhone 15 brings you Dynamic Island, a 48MP Main camera, and USB-C—all in a durable color-infused glass and aluminum design.",
+      "image": "/assets/iPhone_15_Pink_PDP_Image_Position-1__en-IN (1).webp"
+    },
+    {
+      "name": "Calcetto Lightweight Casual Shoes",
+      "price": "2,499",
+      "color": "Light Grey",
+      "category": "Sports Shoes",
+      "description": "Calcetto Lightweight Casual Men'S Running Sports Shoes CLT-0964 Light Grey Lime",
+      "image": "/assets/PIX_5749_0603df7e-4d9a-4227-a7f6-12911cfa8187 (1) (1).webp",
+      "id": "f4ca"
+    },
+    {
+      "id": "6283",
+      "name": "Nike ",
+      "price": " 14 995.00",
+      "color": "Grey",
+      "category": "Shoes",
+      "description": "Nike Air Max 90 By You\nCustom Men's Shoes",
+      "image": "/assets/custom-nike-air-max-90-shoes-by-you (1).avif"
+    },
+    {
+      "id": "0cf4",
+      "name": "Apple iPhone 16 Pro",
+      "price": "119,999 – ₹136,999Price range: ₹119,999 through ₹136,999 incl. GST",
+      "color": "Black",
+      "category": "Mobile",
+      "description": "Apple iPhone 16 Pro (512GB, Black Titanium)",
+      "image": "/assets/Apple-iPhone-16-Pro-128GB-Black-Titanium-8-485x485-optimized (1).webp"
+    },
+    {
+      "id": "82e1",
+      "name": "Vivo Y300",
+      "price": "20,999",
+      "color": "Titanium Silver",
+      "category": "Mobile",
+      "description": "Vivo Y300 5G 8GB+128GB (Titanium Silver)",
+      "image": "/assets/images.webp"
+    }
+  ],
+  "users": [
+    {
+      "id": "5b43",
       "name": "Pooja",
-      "password": "qwe@123",
-      "email": "pooja.@gmail.com"
+      "email": "pooja@gmail.com",
+      "password": "qwe@123"
     },
     {
-      "id": "a0c3",
+      "id": "15de",
+      "name": "geeta",
+      "email": "geeta@gmail.com",
+      "password": "qwe@123"
+    },
+    {
+      "id": "bc30",
       "name": "Priya",
-      "password": "qwe@123",
-      "email": "priya@gmail.com"
+      "email": "priya@gmail.com",
+      "password": "qwe@123"
+    },
+    {
+      "id": "2b63",
+      "name": "vinay",
+      "email": "vinay@gmail.com",
+      "password": "qwe@123"
+    },
+    {
+      "id": "2626",
+      "name": "riya",
+      "email": "riya@gmail.com",
+      "password": "qwe@123"
+    }
+  ],
+  "cart": [],
+  "orders": [
+    {
+      "id": "494f",
+      "email": "geeta@gmail.com",
+      "address": "yamuna vihar, delhi",
+      "contact": "2563827828",
+      "totalPrice": 55098,
+      "userId": "15de"
+    },
+    {
+      "id": "c568",
+      "email": "geeta@gmail.com",
+      "address": "Karawal Nagar Delhi",
+      "contact": "2563827828",
+      "totalPrice": 55098,
+      "userId": "15de"
+    },
+    {
+      "id": "53de",
+      "email": "priya@gmail.com",
+      "address": "yamuna vihar, delhi",
+      "contact": "2563827828",
+      "totalPrice": 50100,
+      "userId": "bc30"
     }
   ]
 }

@@ -1,11 +1,13 @@
 /* You can add global styles to this file, and also import other style files */
-body {
-    font-family: sans-serif;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-.container {
-    margin-left: 5%;
-    margin-right: 5%;
+body {
+    font-family: sans-serif;
+    overflow-x: hidden; /* Prevent horizontal scroll */
 }
 
 .common-form {
@@ -16,6 +18,7 @@ body {
     width: 300px;
 }
 
+/* Input field styles */
 .form-input {
     height: 35px;
     margin-bottom: 20px;
@@ -24,12 +27,21 @@ body {
     color: blueviolet !important;
     border-radius: 5px;
     outline: none;
+    -webkit-text-fill-color: blueviolet !important;
+    /* For WebKit browsers */
+}
+
+/* This ensures the text color stays blueviolet when typing */
+.form-input:not(:placeholder-shown) {
+    color: blueviolet !important;
+    -webkit-text-fill-color: blueviolet !important;
 }
 
 /* Add these rules to style the placeholder text */
 .form-input::placeholder {
     color: blueviolet;
-    opacity: 1; /* Ensures the color is not faded in some browsers */
+    opacity: 1;
+    /* Ensures the color is not faded in some browsers */
 }
 
 .form-button {
@@ -39,5 +51,37 @@ body {
     cursor: pointer;
     color: blueviolet;
     font-size: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
+.error-p {
+    color: red;
+}
+
+.message-p {
+    color: green;
+}
+
+
+.carousel-caption {
+    background-color: #0000004d;
+    border-radius: 5px;
+}
+
+.carousel-control-next-icon, .carousel-control-prev-icon {
+    background-color: black;
+    border-radius: 5px;
+}
+
+.invalid-input{
+    color: red;
+    font-size: 12px;
+    margin-top: -20px;
+}
+
+.form-button:disabled {
+    cursor: not-allowed;
+    opacity: 0.6;
 }

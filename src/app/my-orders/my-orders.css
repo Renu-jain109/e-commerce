@@ -1,0 +1,31 @@
+.my-orders{
+    padding: 20px;
+}
+
+.my-orders h1{
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+
+.order-header{
+    background-color: #f0f0f0;
+    font-weight: 600;
+    padding: 10px;
+}
+
+.order-img {
+    width: 40px;
+}
+
+/* .cancel-button{
+padding: 0px 10px 0px 20px;
+} */
+
+.order-data{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #ddd;
+    display: flex;
+    align-items: center;
+}
