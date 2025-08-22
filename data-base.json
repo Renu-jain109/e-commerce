@@ -15,15 +15,6 @@
   ],
   "products": [
     {
-      "name": "IPhone",
-      "price": "100000",
-      "color": "Grey",
-      "category": "Mobile",
-      "description": "cxnvbm",
-      "image": "/assets/2-2 (1).webp",
-      "id": "839e"
-    },
-    {
       "name": "Dell Laptop",
       "price": "3,21,790.02",
       "color": "Black",
@@ -69,13 +60,13 @@
       "image": "/assets/custom-nike-air-max-90-shoes-by-you (1).avif"
     },
     {
-      "id": "0cf4",
       "name": "Apple iPhone 16 Pro",
-      "price": "119,999 – ₹136,999Price range: ₹119,999 through ₹136,999 incl. GST",
+      "price": "119,999",
       "color": "Black",
       "category": "Mobile",
       "description": "Apple iPhone 16 Pro (512GB, Black Titanium)",
-      "image": "/assets/Apple-iPhone-16-Pro-128GB-Black-Titanium-8-485x485-optimized (1).webp"
+      "image": "/assets/Apple-iPhone-16-Pro-128GB-Black-Titanium-8-485x485-optimized (1).webp",
+      "id": "0cf4"
     },
     {
       "id": "82e1",
@@ -85,6 +76,24 @@
       "category": "Mobile",
       "description": "Vivo Y300 5G 8GB+128GB (Titanium Silver)",
       "image": "/assets/images.webp"
+    },
+    {
+      "name": "Nicmore 5 in 1 Carrier Toy",
+      "price": "6,423",
+      "color": "Red and Yellow",
+      "category": "Toy Trucks ",
+      "description": "Nicmore 5 in 1 Carrier Toy Trucks for Boys - Toddler Toys for Ages 1-5, Kids Gift for 1-4 Year Olds, Baby Toys 36-48 Months Birthday Present - Multicolor",
+      "image": "https://m.media-amazon.com/images/I/81lroDEpXkL.jpg",
+      "id": "43e8"
+    },
+    {
+      "name": "Children Electric Dancing Robots",
+      "price": "990.00",
+      "color": "Blue",
+      "category": "Toy",
+      "description": "Children Electric Dancing Robots for Kids Toy Rock Light Music Early Education Walking Hot Seller Toys Boys Girls Babys Toddlers",
+      "image": "https://samstoy.in/cdn/shop/files/Children-Electric-Dancing-Robots-for-Kids-Toy-Rock-Light-Music-Early-Education-Walking-Hot-Seller-Toys-Boys-Girls-Babys-Toddlers-samstoy-in-2505.jpg?v=1724871447",
+      "id": "d0c7"
     }
   ],
   "users": [
@@ -117,6 +126,12 @@
       "name": "riya",
       "email": "riya@gmail.com",
       "password": "qwe@123"
+    },
+    {
+      "id": "dcea",
+      "name": "ritu",
+      "email": "ritu@gmail.com",
+      "password": "qwe@123"
     }
   ],
   "cart": [],
@@ -144,6 +159,14 @@
       "contact": "2563827828",
       "totalPrice": 50100,
       "userId": "bc30"
+    },
+    {
+      "id": "9550",
+      "email": "siya@gmail.com",
+      "address": "Karawal Nagar Delhi",
+      "contact": "2563827828",
+      "totalPrice": 122598,
+      "userId": "dcea"
     }
   ]
 }

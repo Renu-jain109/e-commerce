@@ -44,8 +44,10 @@ export class CartPage implements OnInit {
       this.priceSummary.discount = price / 10;
       this.priceSummary.tax = price / 10;
       this.priceSummary.deliveryCharges = 100;
-      this.priceSummary.total = price + (price / 10) + 100 - (price / 10);
-      // this.priceSummary.total = price - this.priceSummary.discount + this.priceSummary.tax + this.priceSummary.deliveryCharges;
+      // this.priceSummary.total = Math.round(price - this.priceSummary.discount + this.priceSummary.tax + this.priceSummary.deliveryCharges);
+      // this.priceSummary.total =price + (price / 10) + 100 - (price / 10);
+      this.priceSummary.total = Number((price - this.priceSummary.discount + this.priceSummary.tax + this.priceSummary.deliveryCharges).toFixed(2)); // 2 decimal
+
 
       if (this.cartData.length === 0) {
         this.router.navigate(['/']);

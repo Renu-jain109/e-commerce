@@ -16,7 +16,7 @@
 .product-list-wrapper {
     text-align: center;
     margin-top: 80px;
-    margin-bottom: 80px;
+    margin-bottom: 50px;
 }
 
 .product-item img {
@@ -53,6 +53,15 @@
     padding: 10px;
 }
 
-@media (max-width: 768px) {
+.display-all-product{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+}
 
+.product-add-cart{
+    border: none;
+    background: none;
+    color: #1E90FF;
+    text-decoration: underline;
 }

@@ -30,8 +30,15 @@ export class Checkout implements OnInit {
         price = price + (itemPrice * quantity);
 
       })
-      this.totalPrice = price + (price / 10) + 100 - (price / 10);
-      console.log('Total Price:', this.totalPrice);
+      // this.totalPrice = price + (price / 10) + 100 - (price / 10);
+            // this.totalPrice = Number((price - discount + this.priceSummary.tax + this.priceSummary.deliveryCharges).toFixed(2)); // 2 decimal
+
+            const discount = price / 10; // 10% discount
+      const tax = price / 10;     // 10% tax
+      const deliveryCharges = 100;
+      this.totalPrice = Number((price + tax + deliveryCharges - discount).toFixed(2)); // Adjusted formula
+    
+
     })
   }
 
